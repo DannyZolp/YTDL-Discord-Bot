@@ -1,0 +1,27 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DannyZolp/YTDL-Discord-Bot.git",
+  "author": "Danny Zolp <danny@zolp.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "randomstring": "^1.2.1",
+    "ssh2": "^1.3.0",
+    "ytdl-core": "^4.9.1"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc && docker build ."
+  }
+}
